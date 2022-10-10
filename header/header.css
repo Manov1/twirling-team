@@ -65,6 +65,8 @@ body {
     padding: 0.5rem 0;
     padding-left: 2.5rem;
     padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }
 
 .icon {
@@ -72,6 +74,27 @@ body {
     width: 1.25rem;
     color: black;
 }
+
+.header-button1 {
+  display: inline-block;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.header-button2 {
+  display: inline-block;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: white;
+}
+
 
 /* Screen readers only */
 .sr-only {
