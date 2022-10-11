@@ -4,7 +4,7 @@
       <div class="logo-searchbar">
         <a href="index.php">
           <span class="sr-only">Twirling team sparkle logo</span>
-          <img class="logo" src="../images/sparkle_twirling.png" alt="">
+          <img class="logo" src="/twirling-team/images/sparkle_twirling.png">
         </a>
         <div class="searchbar">
         <div class="searchbar-width">
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="ml-10 space-x-4">
-        <a href="#" class="header-button1 text-white hover:bg-opacity-75">Sign in</a>
+        <a href="#" class="header-button1 hover:bg-opacity-75">Sign in</a>
         <a href="#" class="header-button2 py-2 px-4 text-base font-medium text-indigo-600 hover:bg-indigo-50">Sign up</a>
       </div>
     </div>

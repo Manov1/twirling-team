@@ -85,6 +85,12 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
+  color: #514aff;
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 .header-button2 {
@@ -93,6 +99,22 @@ body {
   border-width: 1px;
   border-color: transparent;
   background-color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #514aff;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+.header-button2:hover,
+.header-button1:hover {
+  background-color: grey;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 
