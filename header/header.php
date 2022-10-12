@@ -4,7 +4,7 @@
       <div class="logo-searchbar">
         <a href="index.php">
           <span class="sr-only">Twirling team sparkle logo</span>
-          <img class="logo" src="/twirling-team/images/sparkle_twirling.png">
+          <img class="logo" src="images/sparkle_twirling.png">
         </a>
         <div class="searchbar">
         <div class="searchbar-width">
