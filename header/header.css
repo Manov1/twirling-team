@@ -3,6 +3,8 @@ body {
 }
 .bg-header {
 	background-color: #514aff;
+	position: relative;
+	z-index: 1;
 }
 
 .nav-width {
