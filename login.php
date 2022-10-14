@@ -21,9 +21,8 @@ if (isset($_POST['login'])) {
     try {
         while ($row = $result->fetch_array()) {
             //result is in row
-            $passwordreturn = password_verify($password, $row['Password']);
+            $passwordreturn = password_verify($wachtwoord, $row['Password']);
             $role = $row['Access_level'];
-
             if ($passwordreturn) {
                 if ($role == 1 || $role == 2) { 
                 $_SESSION['email'] = $email;
@@ -32,6 +31,12 @@ if (isset($_POST['login'])) {
                 $_SESSION['sessionid'] = session_id();
                 alert('Je bent ingelogd!');
                 header( "Refresh:0.1; url=index.php", true, 303);
+                } 
+            }
+            else {
+                alert("wachtwoord fout");
+                if ($row['Email'] == $email) {
+                    alert("email klopt");
                 }
             }
         }
