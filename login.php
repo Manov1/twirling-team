@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
     $email = htmlspecialchars($_POST['Email']);
     $wachtwoord = htmlspecialchars($_POST['password']);
 
-    $sql = "SELECT `ID`, `Email`, `Username`, `Password`, `Access_level`  FROM accounts WHERE Email = ?";
+    $sql = "SELECT `ID`, `Email`, `Username`, `Password`, `Access_level`, `is_active` FROM accounts WHERE Email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param('s', $email);
     $stmt->execute();
@@ -22,9 +22,9 @@ if (isset($_POST['login'])) {
         while ($row = $result->fetch_array()) {
             //result is in row
             $passwordreturn = password_verify($wachtwoord, $row['Password']);
-            $role = $row['Access_level'];
+            $role = $row['is_active'];
             if ($passwordreturn) {
-                if ($role == 1 || $role == 2) { 
+                if ($role == 1) { 
                 $_SESSION['email'] = $email;
                 $_SESSION['access_level'] = $row['Access_level'];
                 $_SESSION['username'] = $row['Username'];
