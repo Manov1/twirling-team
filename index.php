@@ -15,6 +15,5 @@
 </head>
 <body>
 <?php include 'header/header.php'; ?>
-<?php include 'dashboard/dashboard.php'; ?>
 </body>
 </html>
