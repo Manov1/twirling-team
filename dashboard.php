@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="header/header.css">
 	<script>
 		if(window.history.replaceState) {
 			window.history.replaceState(null, null, window.location.href);
@@ -15,6 +16,7 @@
 	</script>
 </head>
 <body>
+	<?php include 'header/header.php'; ?>
 	<div class="container-left">
 		<div class="button-wrapper">
 			<button class="button-style">Home</button>
