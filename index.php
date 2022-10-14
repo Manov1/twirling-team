@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="dashboard/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        if(window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        };
+    </script>
 </head>
 <body>
 <?php include 'header/header.php'; ?>

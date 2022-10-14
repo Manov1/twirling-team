@@ -1,8 +1,3 @@
-<script>
-	if(window.history.replaceState) {
-		window.history.replaceState(null, null, window.location.href);
-	};
-</script>
 <div class="container-left">
 	<div class="button-wrapper">
 		<button class="button-style">Home</button>
