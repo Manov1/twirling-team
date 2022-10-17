@@ -1,0 +1,42 @@
+body {
+    background-color: #514aff;
+}
+
+#loginform {
+    width: 30%;
+    height: 300px;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    border-radius: 20px;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+#formcontent {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#loginput {
+    width: 80%;
+    background-color: whitesmoke;
+    border: solid lightgray 1px;
+    border-radius: 4px;
+    height: 20px;
+    margin: auto;
+}
+#icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#bottomline {
+    margin-bottom: 0px;
+    width: 100%;
+    height: 20%;
+    background-color: lightgray;
+    margin-top: 20%;
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
