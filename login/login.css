@@ -7,23 +7,25 @@ body {
     height: 300px;
     background-color: whitesmoke;
     border: solid black 1px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     margin-left: 35%;
     margin-top: 10%;
 }
+
 #formcontent {
     margin-left: 10%;
     margin-top: 5%;
 }
+
 #loginput {
     width: 80%;
     background-color: whitesmoke;
     border: solid lightgray 1px;
     border-radius: 4px;
-    height: 20px;
-    margin: auto;
+    margin-left: 10px;
     height: 1.5rem;
 }
+
 #icon {
     width: 20px;
     height: 20px;
@@ -32,16 +34,25 @@ body {
 
 #bottomline {
     margin-bottom: 0px;
-    width: 100%;
-    height: 20%;
+    /* width: 100%; */
+    height: 4rem;
     background-color: lightgray;
-    margin-top: 20%;
+    margin-top: 4.4rem;
     border-radius: 0px 0px 20px 20px;
     border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .form-center {
     display: flex;
+}
+
+#button {
+    /* margin-left: 80%; */
+    margin-right: 0.5rem;
+    margin-top: 2%;
+    border-radius: 40px;
+    height: 2.5rem;
+    width: 5rem;
 }
