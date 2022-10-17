@@ -1,6 +1,7 @@
 .sidebar-mobile {
     position: relative;
     z-index: 40;
+    display: none;
 }
 
 .sidebar-mobile-bg {
@@ -207,16 +208,17 @@
     display: flex;
     height: 4rem;
     flex-shrink: 0;
-    border-bottom: 1px;
+    border-bottom: 1px solid;
     border-color: black;
     background-color: #514aff;
 }
 
 .navbar-desktop-button {
-    border-right: 1px;
+    border: 0;
     border-color: black;
     padding: 0 1rem;
     color: black;
+    background-color: #514aff;
 }
 
 .navbar-desktop-button:focus {

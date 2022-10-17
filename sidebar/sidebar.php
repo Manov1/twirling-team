@@ -1,6 +1,15 @@
 <div>
   <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-  <div class="sidebar-mobile" role="dialog" aria-modal="true">
+  <script>
+  function opensidebar() {
+    document.getElementById("sidebar").style.display = "block";
+  }
+
+  function closesidebar() {
+    document.getElementById("sidebar").style.display = "none";
+  }
+  </script>
+  <div id="sidebar" class="sidebar-mobile" role="dialog" aria-modal="true">
     <!--
       Off-canvas menu backdrop, show/hide based on off-canvas menu state.
 
@@ -36,7 +45,7 @@
             To: "opacity-0"
         -->
         <div class="sidebar-mobile-close">
-          <button type="button" class="sidebar-mobile-closebutton">
+          <button type="button" class="sidebar-mobile-closebutton" onclick="closesidebar()">
             <span class="sr-only">Close sidebar</span>
             <!-- Heroicon name: outline/x-mark -->
             <svg class="sidebar-mobile-x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -173,7 +182,7 @@
   <div class="sidebar-mobile-placement">
     <div class="navbar-mobile-container">
       <div class="navbar-desktop-border">
-        <button type="button" class="navbar-desktop-button">
+        <button type="button" class="navbar-desktop-button" onclick="opensidebar()">
           <span class="sr-only">Open sidebar</span>
           <!-- Heroicon name: outline/bars-3-bottom-left -->
           <svg class="searchbar-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -219,7 +228,7 @@
 
                 <a href="#" class="profile-dropdown-link" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
 
-                <a href="#" class="profile-dropdown-link" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+                <a href="uitlog.php" class="profile-dropdown-link" role="menuitem" tabindex="-1" id="user-menu-item-2">Uitloggen</a>
               </div>
             </div>
           </div>
