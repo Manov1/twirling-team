@@ -65,13 +65,15 @@ if (isset($_POST['login'])) {
         <div id="formcontent">
             <h3> Ledenadministratie systeem Twirling Team Sparkle </h3>
             <br> <br>
-            <div>
-            <img id="icon" src="images/mail.png" alt="E-mail:">
-            <input id="loginput" type="text" required name="Email" placeholder="E-mail">
-</div>
+            <div class="form-center">
+                <img id="icon" src="images/mail.png" alt="E-mail:">
+                <input id="loginput" type="text" required name="Email" placeholder="E-mail">
+            </div>
             <br>
-            <img id="icon" src="images/password.png" alt="Wachtwoord:">
-            <input id="loginput" type="password" required name="password" placeholder="Wachtwoord">
+            <div class="form-center">
+                <img id="icon" src="images/password.png" alt="Wachtwoord:">
+                <input id="loginput" type="password" required name="password" placeholder="Wachtwoord">
+            </div>
         </div>
         <div id="bottomline">
             <input type="submit" name="login" value="Login">
