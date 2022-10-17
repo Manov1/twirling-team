@@ -1,3 +1,14 @@
+<?php 
+session_start();
+
+include "connection.php";
+
+if (!(isset($_SESSION['sessionid']) || $_SESSION['sessionid'] == session_id())) {
+  header("location: login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
