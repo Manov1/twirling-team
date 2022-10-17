@@ -9,8 +9,8 @@
     <title>[7.1] 🌀 Twirling Team Sparkle</title>
 
     <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="sidebar/sidebar.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="dashboard/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript">
         if(window.history.replaceState) {
@@ -19,7 +19,11 @@
     </script>
 </head>
 <body>
-<?php include 'header/header.php'; ?>
-<?php include 'dashboard/dashboard.php'; ?>
+<?php include 'sidebar/sidebar.php'; ?>
+
+<!-- place content here -->
+
+
+<?php include 'sidebar/sidebar-end.php'; ?>
 </body>
 </html>
