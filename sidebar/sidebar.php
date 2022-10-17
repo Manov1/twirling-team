@@ -50,13 +50,9 @@
         </div>
         <div class="sidebar-mobile-navcontainer">
           <nav class="sidebar-mobile-nav">
-            <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
+            <!-- Create current page indication -->
             <a href="index.php" class="sidebar-mobile-nav-link">
-              <!--
-                Heroicon name: outline/home
-
-                Current: "text-gray-500", Default: "text-gray-400 group-hover:text-gray-500"
-              -->
+              <!-- Heroicon name: outline/home -->
               <svg class="sidebar-mobile-img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg>
@@ -114,20 +110,16 @@
 
   <!-- Static sidebar for desktop -->
   <div class="sidebar-desktop">
-    <!-- Sidebar component, swap this element with another sidebar if you like -->
+    <!-- Sidebar component -->
     <div class="sidebar-desktop-container">
       <div class="sidebar-desktop-logocontainer">
         <img class="sidebar-desktop-logo" src="../twirling-team/images/sparkle_twirling.png" alt="Your Company">
       </div>
       <div class="sidebar-desktop-navcontainer">
         <nav class="sidebar-desktop-nav">
-          <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
-          <a href="#" class="sidebar-desktop-link">
-            <!--
-              Heroicon name: outline/home
-
-              Current: "text-gray-500", Default: "text-gray-400 group-hover:text-gray-500"
-            -->
+          <!-- Add current page indication -->
+          <a href="index.php" class="sidebar-desktop-link">
+            <!-- Heroicon name: outline/home -->
             <svg class="sidebar-desktop-img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
             </svg>
@@ -213,7 +205,7 @@
             </button>
 
             <!-- Profile dropdown -->
-            <div class="profile-dropdown">
+            <div class="profile-dropdown profile-show">
               <div>
                 <button type="button" class="profile-dropdown-button" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                   <span class="sr-only">Open user menu</span>
@@ -221,16 +213,6 @@
                 </button>
               </div>
 
-              <!--
-                Dropdown menu, show/hide based on menu state.
-
-                Entering: "transition ease-out duration-100"
-                  From: "transform opacity-0 scale-95"
-                  To: "transform opacity-100 scale-100"
-                Leaving: "transition ease-in duration-75"
-                  From: "transform opacity-100 scale-100"
-                  To: "transform opacity-0 scale-95"
-              -->
               <div class="profile-dropdown-section" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                 <!-- Active: "bg-gray-100", Not Active: "" -->
                 <a href="#" class="profile-dropdown-link" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
