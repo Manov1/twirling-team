@@ -55,7 +55,7 @@
         </div>
 
         <div class="sidebar-mobile-logocontainer">
-          <img class="sidebar-mobile-logo" src="../twirling-team/images/sparkle_twirling.png" alt="Twirling team sparkle logo">
+          <img class="sidebar-mobile-logo" src="images/sparkle_twirling.png" alt="Twirling team sparkle logo">
         </div>
         <div class="sidebar-mobile-navcontainer">
           <nav class="sidebar-mobile-nav">
@@ -122,7 +122,8 @@
     <!-- Sidebar component -->
     <div class="sidebar-desktop-container">
       <div class="sidebar-desktop-logocontainer">
-        <img class="sidebar-desktop-logo" src="../twirling-team/images/sparkle_twirling.png" alt="Your Company">
+        <img class="sidebar-desktop-logo" src="images/sparkle_twirling.png">
+        <p>Your Company</p>
       </div>
       <div class="sidebar-desktop-navcontainer">
         <nav class="sidebar-desktop-nav">
