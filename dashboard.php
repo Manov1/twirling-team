@@ -30,6 +30,9 @@ foreach($resultactive as $row) {
 		<div class="chart 1">
 			<canvas id="bar-chart" width="500" height="500"></canvas>
 		</div>
+		<div class="chart 1">
+			<canvas id="bar-chart" width="500" height="500"></canvas>
+		</div>
 	</div>
 	<script>
 		const users = "<?php echo $users; ?>";
@@ -52,7 +55,7 @@ foreach($resultactive as $row) {
 				plugins: {
 					tooltip: {
 						enabled: false,
-					}
+					},
 				}
 			}
 		});
