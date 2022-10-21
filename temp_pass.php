@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 include "connection.php";
 
 function alert($msg)
@@ -8,9 +7,8 @@ function alert($msg)
     echo "<script type='text/javascript'>alert('$msg');</script>";
 }
 
-
-if (isset($_POST['login'])) {
-    $email = htmlspecialchars($_POST['Email']);
+if (isset($_POST['Wachtwoord'])) {
+    $email = htmlspecialchars($_SESSION['emailchecker']);
     $wachtwoord = htmlspecialchars($_POST['password']);
 
     $sql = "SELECT `ID`, `Email`, `Username`, `Password`, `Access_level`, `is_active` FROM accounts WHERE Email = ?";
@@ -22,9 +20,8 @@ if (isset($_POST['login'])) {
     try {
         while ($row = $result->fetch_array()) {
             //result is in row
-            $passwordreturn = password_verify($wachtwoord, $row['Password']);
             $role = $row['is_active'];
-            if ($passwordreturn) {
+            if ($wachtwoord == $_SESSION['temppass']) {
                 if ($role == 1) {
                     $_SESSION['email'] = $email;
                     $_SESSION['access_level'] = $row['Access_level'];
@@ -38,8 +35,13 @@ if (isset($_POST['login'])) {
     } catch (Exception $e) {
         $e->getMessage();
     }
-}
+} else {
+    $temppass = bin2hex(openssl_random_pseudo_bytes(4));
+    $_SESSION['emailchecker'] = $_POST['checker'];
+    $_SESSION['temppass'] = $temppass;
 
+    alert($temppass);
+}
 
 ?>
 
@@ -56,24 +58,19 @@ if (isset($_POST['login'])) {
 </head>
 
 <body>
-    <form method="post" id="loginform" action="login.php">
+    <form method="post" id="loginform" action="temp_pass.php">
         <div id="formcontent">
-            <h3> Ledenadministratie systeem Twirling Team Sparkle </h3>
-            <br> <br>
-            <div class="form-center">
-                <img id="icon" src="images/mail.png" alt="E-mail:">
-                <input id="loginput" type="text" required name="Email" placeholder="E-mail">
-            </div>
-            <br>
+            <h3> Tijdelijk wachtwoord voor Twirling Team Sparkle</h3>
+            <br> <br> <br>
             <div class="form-center">
                 <img id="icon" src="images/password.png" alt="Wachtwoord:">
                 <input id="loginput" type="password" required name="password" placeholder="Wachtwoord">
+                <br> <br> <br>
             </div>
         </div>
         <div id="bottomline">
             <div class="form-center">
-                <a id="link" href="wachtwoord.php">Wachtwoord vergeten?</a>
-                <input type="submit" id="button" name="login" value="Login">
+                <input type="submit" id="button" name="Wachtwoord" value="login">
                 <br>
             </div>
         </div>
