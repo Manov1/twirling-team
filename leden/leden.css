@@ -1,0 +1,241 @@
+.leden-container {
+    padding: 0 1rem;
+}
+
+.leden-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: black;
+}
+
+.leden-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.leden-button-container {
+    margin-top: 1rem;
+}
+
+.leden-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    border-width: 1px;
+    border-color: transparent;
+    background-color: #514aff;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    text-decoration: none;
+}
+
+.leden-button:hover {
+    background-color: #312ade;
+}
+
+.leden-button:focus {
+    outline: none;
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-offset-width: 2px;
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-shadow);
+}
+
+.flex-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.overflow-container {
+    margin: -0.5rem -1rem;
+    overflow-x: auto;
+}
+
+.padding-container {
+    display: inline-block;
+    min-width: 100%;
+    padding: 0.5rem 0;
+    vertical-align: middle;
+}
+
+.table-container {
+    overflow: hidden;
+    box-shadow: 5px 3px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    border: 1px gray solid;
+}
+
+.leden-table {
+    min-width: 100%;
+    border-collapse: collapse;
+}
+
+.leden-table tbody {
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-color: rgb(0 0 0);
+    border-style: solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.leden-table tbody tr {
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-color: rgb(0 0 0);
+    border-style: solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.leden-table thead {
+    background-color: lightgray;
+}
+
+.table-naam {
+    padding: 0.875rem 0.75rem 0.875rem 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.table-email {
+    padding: 0.875rem 0.75rem;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.table-eind-datum {
+    padding: 0.875rem 0.75rem;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.table-info {
+    position: relative;
+    padding: 0.875rem 0.75rem 0.875rem 1rem;
+}
+
+.table-naam-text {
+    white-space: nowrap;
+    padding: 1rem 0.75rem 1rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.table-email-text {
+    white-space: nowrap;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.table-eind-datum-text {
+    white-space: nowrap;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.table-info-text {
+    position: relative;
+    white-space: nowrap;
+    padding: 1rem 1rem 1rem 0.75rem;
+    text-align: right;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.table-info-button {
+    color: #514aff;
+    text-decoration: none;
+}
+
+.table-info-button:hover {
+    color: #312ade;
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .leden-container {
+        padding: 0 1.5rem;
+    }
+
+    .leden-title-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .text-container {
+        flex: 1 1 auto;
+    }
+
+    .leden-button-container {
+        margin-top: 0;
+        margin-left: 4rem;
+        flex: none;
+    }
+
+    .leden-button {
+        width: auto;
+    }
+
+    .overflow-container {
+        margin: -0.5rem -1.5rem;
+    }
+
+    .table-naam {
+        padding: 0.875rem 0.75rem 0.875rem 1.5rem;
+    }
+
+    .table-info {
+        padding: 0.875rem 0.75rem 0.875rem 1.5rem;
+    }
+
+    .table-naam-text {
+        padding-left: 1.5rem;
+    }
+
+    .table-info-text {
+        padding-right: 1.5rem;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .padding-container {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .table-container {
+        border-radius: 0.5rem;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .leden-container {
+        padding: 0 2rem;
+    }
+
+    .overflow-container {
+        margin: -0.5rem -2rem;
+    }
+
+    .padding-container {
+        padding: 0.5rem 2rem;
+    }
+}

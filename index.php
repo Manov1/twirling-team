@@ -1,16 +1,17 @@
-<?php 
+<?php
 session_start();
 
 include "connection.php";
 
 if (!(isset($_SESSION['sessionid']) || $_SESSION['sessionid'] == session_id())) {
-  header("location: login.php");
+    header("location: login.php");
 }
 
 ?>
 
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html">
@@ -23,12 +24,14 @@ if (!(isset($_SESSION['sessionid']) || $_SESSION['sessionid'] == session_id())) 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<?php include 'sidebar/sidebar.php'; ?>
+    <?php include 'sidebar/sidebar.php'; ?>
 
-<!-- place content here -->
+    <!-- place content here -->
 
 
-<?php include 'sidebar/sidebar-end.php'; ?>
+    <?php include 'sidebar/sidebar-end.php'; ?>
 </body>
+
 </html>
